@@ -1,0 +1,22 @@
+// Contact
+.contact{
+    @extend %list;
+}
+.contact__icon {
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.contact__link {
+    @extend %link;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    &:hover {
+        color: $accent-color;
+    }
+}
+.header .contact__link{color: $text-color;
+    &:hover {
+        color: $accent-color;
+    }}

@@ -1,0 +1,34 @@
+.function {
+    @extend %section;
+    padding-bottom: 0px;
+}
+.function__list {
+    @extend %list;
+    display: flex;
+}
+.function__item {
+    width: 270px;
+    margin-left: 30px;
+    &:first-child {
+            margin-left: 0px;}
+}
+.function__icon-block {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.function__tittle {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    text-transform: uppercase;
+}
+
+.function__text {
+    color: $text-color;
+    line-height: calc(24 / 14);
+}

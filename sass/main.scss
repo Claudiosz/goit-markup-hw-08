@@ -1,0 +1,24 @@
+@import './utils/_variables.scss';
+@import './utils/placeholder';
+@import './utils/hidden';
+
+@import './base/reset';
+@import './base/common';
+
+@import './components/section';
+@import './components/container';
+@import './components/tittle';
+@import './components/modal';
+@import './components/logo';
+
+@import './layuouts/header';
+@import './layuouts/contacts';
+@import './layuouts/site-nav';
+@import './layuouts/banner';
+@import './layuouts/function';
+@import './layuouts/about';
+@import './layuouts/comands';
+@import './layuouts/clients';
+@import './layuouts/footer';
+@import './layuouts/page-nav';
+@import './layuouts/portgolio';

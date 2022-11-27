@@ -1,0 +1,65 @@
+.comands {
+    @extend %section;
+    background: #f5f4fa;
+}
+
+.comands__list {
+    @extend %list;
+    display: flex;
+}
+
+.comands__item {
+    width: 270px;
+    margin-left: 30px;
+    background-color: $secondary-color;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+        &:first-child{
+                margin-left: 0;
+            }
+}
+
+.comands__card {
+    padding: 30px 0;
+    width: 100%;
+    word-wrap: break-word;
+}
+.comands__name {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: calc(19 / 16);
+    text-align: center;
+}
+.comands__job {
+    color: $text-color;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
+.comands .icon-list__link{fill: #afb1b8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        fill: $secondary-color;
+    }}
+.comands .icon-list {
+    @extend %list;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.icon-list__item {
+  width: 44px;
+    height: 44px;
+}
