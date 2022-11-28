@@ -1,4 +1,11 @@
-.about{@extend %section;}
+.about{
+    @extend %section;
+    display: none;
+    margin: 0 auto;
+    @media  screen and (min-width:1200px){
+    display: block;    
+    }
+}
 .about__list {
     @extend %list;
     position: relative;
