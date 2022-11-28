@@ -2,11 +2,19 @@
     padding: 60px 0px;
     background-color: #2f303a;
 }
-// .footer .container{display: flex;justify-content: space-between;align-items: baseline;}
+.footer .container{ 
+    @media screen and (min-width:1200px) {
+    display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+} 
+}
 .form-container {
     text-align: center;
-    // display: flex;
-    // align-items: baseline;
+    @media screen and (min-width:1200px) {
+        display: flex;
+            align-items: baseline;
+    }
 }
 .footer__contact{
         margin-top: 8px;
@@ -73,15 +81,22 @@
     }
 }
 .subscribe {
-    // display: flex;
-    text-align: center;
+        text-align: center;
+        @media screen and (max-width:1199px) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+        
+            }
+        // @media screen and (min-width:1200px) {
+        //         display: flex;
+        //     }
 }
 .subscribe__input {
-    display: block;
+    display: inline-block;
     width: 100%;
     height: 50px;
     padding: 15px 0 15px 16px;
-    margin: 20px 0;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -96,12 +111,32 @@
         &:focus{
                 border-color: $accent-color;
             }
+               @media screen and (max-width:1199px) {
+margin: 20px 0;
+             max-width: 450px;}
+                         @media screen and (min-width:1199px) {
+                             display: flex;
+                            width: 358px;
+                         }    
 }
+.form-subscribe{
+    @media screen and (max-width:1199px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+        }
+        @media screen and (min-width:1199px) {
+            display: flex;
+        }
+    }
 .subscribe__button {
     @extend %button;
+    display: inline-block;
     position: relative;
     margin-left: 12px;
     color: $secondary-color;
+    max-width: 200px;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30 / 16);
@@ -112,11 +147,14 @@
 }
 
 .subscribe__tittle {
-    display: inline-block;
+    display: block;
     color: $secondary-color;
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 20px;
+    @media screen and (min-width:1200px) {
+        text-align: start;
+    }
 }
 .subscribe__icons {
     position: absolute;

@@ -5,12 +5,17 @@
     @media screen and (max-width:767px) {
             display: none;
         }
+                @media screen and (min-width:768px) {
+                    margin-left: 87px;
+                }
+                @media screen and (min-width:1200px) {
+                    margin-left: 92px;
+                }
 }
 
 .site-nav__item {
     position: relative;
     margin-left: 50px;
-
     &:first-child {
         margin-left: 0px;
     }
@@ -31,7 +36,6 @@
 
 .site-nav__link--active {
     color: $accent-color;
-
     &::after {
         position: absolute;
         content: "";

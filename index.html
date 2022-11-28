@@ -45,7 +45,7 @@
         <ul class="contact">
           <li class="contact__item header__contact">
             <a href="mailto:info@devstudio.com" class="contact__link" lang="en"
-              ><svg class="contact__icon" width="16px" height="12px">
+              ><svg class="contact__icon contact__icon-envelope" width="14px" height="10px">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
@@ -53,7 +53,7 @@
           </li>
           <li class="contact__item header__contact">
             <a href="tel:+380961111111" class="contact__link link">
-              <svg class="contact__icon" width="10px" height="16px">
+              <svg class="contact__icon contact__icon-smartphone" width="10px" height="14px">
                 <use href=".//images/icons.svg#icon-smartphone"></use>
               </svg>
               +380961111111</a
@@ -74,8 +74,9 @@
         <div class="backdrop is-hidden" data-modal>
           <div class="modal">
             <div>
-              <p class="modal_tittle">Залиште свої дані, ми вам передзвонимо</p>
-              <form>
+              
+              <form class="modal-form">
+                <p class="modal_tittle">Залиште свої дані, ми вам передзвонимо</p>
                 <div class="modal__field">
                   <label for="name" class="modal__label">Ім'я</label>
                   <input
@@ -113,7 +114,7 @@
                     class="modal__comment"
                     name="comment"
                     id="comment"
-                    rows="8"
+                    rows="6"
                     placeholder="Введіть текст"
                   ></textarea>
                 </div>
@@ -529,14 +530,14 @@
         </div>
         <div class="subscribe">
           <p class="subscribe__tittle">Підпишіться на розсилку</p>
-          <form class="subscribe">
-            <input
-              class="subscribe__input"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-            />
+          <form class="form-subscribe">
+              <input
+                class="subscribe__input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="E-mail"
+              />
             <button class="subscribe__button" type="submit">
               Підписатися<svg class="subscribe__icons">
                 <use href="./images/icons.svg#icon-send"></use>

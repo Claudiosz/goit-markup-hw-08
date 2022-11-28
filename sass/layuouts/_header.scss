@@ -8,26 +8,41 @@
 .header-nav {
     display: flex;
     align-items: center;
+    
 }
 .header-nav__logo {
+    display: block;
     font-family: 'Raleway',sans-serif;
     @extend %link;
-    margin-right: 93px;
     padding: 24px 0;
 }
 .header-nav__logo--blue{color: $accent-color;}
-.header .contact{display: flex;
+.header .contact{
+    display: flex;
     align-items: center;
     @media screen and (max-width:767px) {
             display: none;
         }
+        @media screen and (max-width:1199px) {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: baseline;
+        }
 }
 .header__contact{
-    margin-left: 50px;
-    &:first-child{margin-left: 0;}
         @media screen and (max-width:767px) {
             display: none;
         }
-    
+        @media screen and (min-width:1200px) {
+        margin-left: 50px; 
+        &:first-child{margin-left: 0;}
+        }
 }
+.header .contact__link {
+    @media screen and (max-width:1199px) {
+    font-size: 12px;
+    }
+    }
+    
 

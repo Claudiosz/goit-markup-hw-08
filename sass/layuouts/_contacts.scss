@@ -4,9 +4,24 @@
 }
 .contact__icon {
     fill: currentColor;
-    margin-right: 10px;
+    margin-right: 8px;
+    @media screen and (min-width:1200px) {
+        margin-right: 10px;
+    }
 }
+.contact__icon-envelope{
+    @media screen and (min-width:1200px) {
+            width: 16px;
+            height: 12px;
+        
+    }}
+.contact__icon-smartphone {
+      @media screen and (min-width:1200px) {
+          width: 10px;
+          height: 16px;
 
+      }
+  }
 .contact__link {
     @extend %link;
     color: rgba(255, 255, 255, 0.6);
