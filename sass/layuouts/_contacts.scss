@@ -1,6 +1,9 @@
 // Contact
 .contact{
     @extend %list;
+    padding: 0;
+    margin: 0;
+    display: block;
 }
 .contact__icon {
     fill: currentColor;
