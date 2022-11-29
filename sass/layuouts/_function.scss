@@ -1,7 +1,9 @@
 .function {
     @extend %section;
-    padding-bottom: 0px;
-    margin: 0 auto
+    margin: 0 auto;
+    @media screen and(min-width:1200px){
+        padding-bottom: 0px;
+    }
 }
 .function__list {
     @extend %list;

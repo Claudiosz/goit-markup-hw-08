@@ -1,10 +1,9 @@
 .banner {
     max-width: 1600px;
-    min-width: 320px;
     height: auto;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/Img.jpg);
+        url(../images/heromob.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -12,9 +11,10 @@
     padding: 200px 0;
     margin: 0 auto;
 @media screen and(max-width:767px) {
+    padding: 118px 0;
     max-width: 100%;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)),url(../images/Header.jpg);
+            rgba(47, 48, 58, 0.4)),url(../images/heromob.jpg);
     @media (min-device-pixel-ratio: 2),
         (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -22,18 +22,34 @@
             & {
     
                 background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                        rgba(47, 48, 58, 0.4)),url('../images/Header@2x.jpg');
+                        rgba(47, 48, 58, 0.4)),url('../images/heromob@2x.jpg');
             }
         }
     }
  @media screen and(min-width:768px) {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)), url('../images/herotablet.jpg');
      @media (min-device-pixel-ratio: 2),
      (-webkit-min-device-pixel-ratio: 2),
      (min-resolution: 192dpi),
      (min-resolution: 2dppx) {
          & {
              background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)),url('../images/Img@2x.jpg');
+                    rgba(47, 48, 58, 0.4)),url('../images/herotablet@2x.jpg');
+         }
+     }
+ }
+ @media screen and(min-width:1200px) {
+     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+             rgba(47, 48, 58, 0.4)), url('../images/herodesk.jpg');
+
+     @media (min-device-pixel-ratio: 2),
+     (-webkit-min-device-pixel-ratio: 2),
+     (min-resolution: 192dpi),
+     (min-resolution: 2dppx) {
+         & {
+             background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                     rgba(47, 48, 58, 0.4)), url('../images/herodesk@2x.jpg');
          }
      }
  }

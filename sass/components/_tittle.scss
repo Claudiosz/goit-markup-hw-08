@@ -1,5 +1,11 @@
 .section-tittle{
-    // margin-bottom: 50px;
     font-size: 36px;
     line-height: calc(42 / 36);
-    text-align: center;}
+    text-align: center;
+@media  screen and(max-width:1199px) {
+    margin-bottom: 30px;
+}
+@media screen and(min-width:1200px) {
+    margin-bottom: 50px;
+}
+}

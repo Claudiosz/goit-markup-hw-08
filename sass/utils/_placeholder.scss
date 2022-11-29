@@ -13,7 +13,16 @@
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 500;}
-%section{padding: 94px 0px;}
+%section{
+    @media screen and(max-width:1199px) {
+            padding: 60px 0px;
+        }
+    @media screen and(min-width:1200px) {
+        padding: 94px 0px;
+    }
+    
+    }
+        
 %logo{
         font-family: "Raleway";
         font-size: 26px;
