@@ -48,9 +48,16 @@
         color: $accent-color;
         margin-bottom: 32px;
     }
-.mobile-contact__link{@extend %link;font-size: 40px;}
+.mobile-contact__link{@extend %link;
+    font-size: 24px;
+    @media screen and(min-width:480px){font-size: 40px;}
+           
+    }
 .mob-soc{@extend %list;display: flex;gap: 10px;margin: 64px 0 48px 40px;}
 .mob-soc li:not(:last-child):after{content: '|';
     color: rgba(33, 33, 33, 0.2);
     margin-left: 10px;}
-.soc__link{@extend %link;color: $accent-color;}
+.soc__link{@extend %link;color: $accent-color;font-size: 10px;
+    @media screen and(min-width:480px){
+    font-size: 18px;
+}}

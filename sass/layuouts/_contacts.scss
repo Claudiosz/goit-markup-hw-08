@@ -35,6 +35,7 @@
     }
 }
 .header .contact__link{color: $text-color;
+    font-weight: 500;
     &:hover {
         color: $accent-color;
     }}

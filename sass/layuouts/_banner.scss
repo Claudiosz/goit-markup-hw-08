@@ -8,10 +8,11 @@
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-    padding: 200px 0;
+    padding: 118px 0;
+    
     margin: 0 auto;
 @media screen and(max-width:767px) {
-    padding: 118px 0;
+    
     max-width: 100%;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),url(../images/heromob.jpg);
@@ -40,6 +41,7 @@
      }
  }
  @media screen and(min-width:1200px) {
+    padding: 200px 0;
      background-image: linear-gradient(rgba(47, 48, 58, 0.4),
              rgba(47, 48, 58, 0.4)), url('../images/herodesk.jpg');
 
@@ -63,7 +65,11 @@
     color: $secondary-color;
     line-height: calc(60 / 44);
     margin-bottom: 30px;
+    @media screen and (max-width:1199px) {
+            max-width: 360px;
+        }
     @media  screen and (min-width:1200px) {
+        width: 696px;
         font-size: 44px;
         
     }
